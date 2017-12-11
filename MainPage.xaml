@@ -8,7 +8,7 @@
     xmlns:Controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
     mc:Ignorable="d">
 
-    <Grid Background="Black">
+    <Grid Background="Gray" >
 
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"/>
@@ -17,23 +17,23 @@
         </Grid.RowDefinitions>
 
 
-        <TextBlock FontSize="50" Grid.Row="0" FontStyle="Italic" HorizontalAlignment="Center" Margin="20,-25,0,200" Height="75" Width="235">
+        <TextBlock FontSize="50" Grid.Row="0" FontStyle="Italic" HorizontalAlignment="Center" Margin="20,0,0,240" Height="75" Width="235">
              <Run Text="Stopwatch" Foreground="White"/>
         </TextBlock>
 
-        <Controls:RadialProgressBar x:Name="bar" Grid.Row="0" HorizontalAlignment="Center" Margin="0,80,0,0" VerticalAlignment="Top" Value="0" Thickness="9" Minimum="0" Maximum="60" Outline="White" Height="208" Width="235" />
+        <Controls:RadialProgressBar x:Name="bar" Grid.Row="0" HorizontalAlignment="Center" Margin="0,90,0,0" VerticalAlignment="Top" Value="0" Thickness="9" Minimum="0" Maximum="60" Outline="White" Height="208" Width="255" />
 
-        <TextBlock Grid.Row="0" Height="140" Width="150" FontSize="80" FontStyle="Italic" HorizontalAlignment="Center" Margin="160, 125, 105, 70">
+        <TextBlock Grid.Row="0" Height="107" Width="107" FontSize="90" FontStyle="Italic" HorizontalAlignment="Center" Margin="50,25,46,5">
             <Run x:Name="timeinsecs" Foreground="White"/>
         </TextBlock>
 
-        <TextBlock Foreground="White" FontStyle="Italic" Grid.Row="1" FontSize="60" HorizontalAlignment="Center" Margin="10, -26, 0, 50" Width="300" Height="80">
+        <TextBlock Foreground="White" FontStyle="Italic" Grid.Row="1" FontSize="60" HorizontalAlignment="Center" Margin="10, -40, 0, 50" Width="300" Height="80">
             <Run x:Name="timertxtblock" Foreground="White" />
         </TextBlock>
-        
-       
-        
-        
+
+
+
+
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="1" Width="360" Height="80" Margin="0, 50, 0, 0">
             <AppBarButton Grid.Row="1" x:Name="Start_Button"  Margin="15, 20, 20, 0" Height="60" Foreground="white" Background="Transparent" FontSize="20" Icon="Play" Label="Start" BorderBrush="Orange" BorderThickness="3" Click="Start_Button_Click"/>
@@ -46,7 +46,14 @@
 
         </StackPanel>
 
-        <ListBox Grid.Row="2" x:Name="elapsedTime" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center" Height="190" Margin="0, 0, 0, 0"/>
+        <!--<ListBox Grid.Row="2" x:Name="LapTimes" FontSize="20" HorizontalAlignment="Center" Height="190" Margin="0, 0, 0, 0">
+        </ListBox>-->
+
+        <StackPanel Grid.Row="2" Background="White" BorderBrush="Orange" BorderThickness="4">
+            <TextBlock x:Name="laps">
+
+            </TextBlock>
+        </StackPanel>
 
     </Grid>
 </Page>
