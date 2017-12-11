@@ -50,9 +50,13 @@
         </ListBox>-->
 
         <StackPanel x:Name="lapholder" Grid.Row="2" Background="White" BorderBrush="Orange" BorderThickness="4">
-            <TextBlock x:Name="laps">
+            <ScrollViewer Height="190" Width="Auto" 
+                  HorizontalScrollBarVisibility="Auto" 
+                  VerticalScrollBarVisibility="Auto">
+                <TextBlock x:Name="laps">
 
             </TextBlock>
+            </ScrollViewer>
         </StackPanel>
 
     </Grid>
