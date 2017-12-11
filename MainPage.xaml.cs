@@ -94,7 +94,6 @@ namespace StopwatchTimer
             timeinsecs.Text = "00";
             lapCount = 0;
             laps.Text = "";
-            //LapTimes.Items.Clear();
         }
 
         private void Lap_Button_Click(object sender, RoutedEventArgs e)
@@ -102,36 +101,16 @@ namespace StopwatchTimer
            if(watch.IsRunning)
             {
                 lapCount++;
-                //LapTimes.Items.Add("  Lap " + lapCount +  ": " + currentTime);
-
+                
                 laps.FontSize = 16;
                 laps.FontWeight = FontWeights.Bold;
                 laps.FontStyle = FontStyle.Italic;
 
-                laps.Text += "Lap " + lapCount + ": " + currentTime + Environment.NewLine + Environment.NewLine;
+                laps.Text += " Lap " + lapCount + ": " + currentTime + Environment.NewLine + Environment.NewLine;
 
 
             }
-           /*
-            lapCount++;
-                //LapTimes.Items.Add("  Lap " + lapCount +  ": " + currentTime);
-
-                laps.FontSize = 16;
-                laps.FontWeight = FontWeights.Bold;
-                laps.FontStyle = FontStyle.Italic;
-
-                laps.Text += "Lap " + lapCount + ": " + currentTime + Environment.NewLine + Environment.NewLine;
-            */
-
-            
            
-
-            //lapholder.Children.Add(laps);
-
-            /*
-             * string current = textblock.text;
-             * textBlock.Text = "Lap: X: " + newTime + System.Environment.NewLine() + current;
-             * */
         }
     }
 }

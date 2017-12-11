@@ -8,7 +8,7 @@
     xmlns:Controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
     mc:Ignorable="d">
 
-    <Grid Background="Gray" >
+    <Grid Background="#696969" >
 
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"/>
@@ -46,10 +46,7 @@
 
         </StackPanel>
 
-        <!--<ListBox Grid.Row="2" x:Name="LapTimes" FontSize="20" HorizontalAlignment="Center" Height="190" Margin="0, 0, 0, 0">
-        </ListBox>-->
-
-        <StackPanel x:Name="lapholder" Grid.Row="2" Background="White" BorderBrush="Orange" BorderThickness="4">
+        <StackPanel x:Name="lapholder" Grid.Row="2" Background="White" BorderBrush="Orange" Margin="0,0,0,5" BorderThickness="4">
             <ScrollViewer Height="190" Width="Auto" 
                   HorizontalScrollBarVisibility="Auto" 
                   VerticalScrollBarVisibility="Auto">
