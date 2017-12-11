@@ -46,11 +46,11 @@ namespace StopwatchTimer
         {
             if(watch.IsRunning)
             {
-                TimeSpan t = watch.Elapsed;
-                currentTime = String.Format("{0:00}:{1:00}:{2:00}:{3:00}", t.Hours, t.Minutes, t.Seconds, t.Milliseconds / 10);
+                TimeSpan time = watch.Elapsed;
+                currentTime = String.Format("{0:00}:{1:00}:{2:00}:{3:00}", time.Hours, time.Minutes, time.Seconds, time.Milliseconds / 10);
                 timertxtblock.Text = currentTime;
 
-                currentSecs = String.Format("{0:00}", t.Seconds);
+                currentSecs = String.Format("{0:00}", time.Seconds);
 
                 timeinsecs.Text = currentSecs;
 
@@ -93,13 +93,33 @@ namespace StopwatchTimer
             bar.Value = 0;
             timeinsecs.Text = "00";
             lapCount = 0;
-            elapsedTime.Items.Clear();
+            lapholder.Children.Clear();
+            //LapTimes.Items.Clear();
         }
 
         private void Lap_Button_Click(object sender, RoutedEventArgs e)
         {
-            lapCount++;
-            elapsedTime.Items.Add("  Lap " + lapCount +  ": " + currentTime);
+            if(watch.IsRunning)
+            {
+                lapCount++;
+                //LapTimes.Items.Add("  Lap " + lapCount +  ": " + currentTime);
+
+                laps.FontSize = 16;
+                laps.FontWeight = FontWeights.Bold;
+                laps.FontStyle = FontStyle.Italic;
+
+                laps.Text += "Lap " + lapCount + ": " + currentTime + Environment.NewLine;
+            }
+
+            
+           
+
+            //lapholder.Children.Add(laps);
+
+            /*
+             * string current = textblock.text;
+             * textBlock.Text = "Lap: X: " + newTime + System.Environment.NewLine() + current;
+             * */
         }
     }
 }
