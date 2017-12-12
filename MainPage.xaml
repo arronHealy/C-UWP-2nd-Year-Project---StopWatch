@@ -21,9 +21,12 @@
              <Run Text="Stopwatch" Foreground="White"/>
         </TextBlock>
 
-        <Controls:RadialProgressBar x:Name="bar" Grid.Row="0" HorizontalAlignment="Center" Margin="0,90,0,0" VerticalAlignment="Top" Value="0" Thickness="9" Minimum="0" Maximum="60" Outline="White" Height="208" Width="255" />
+        <Controls:RadialProgressBar x:Name="bar2" Grid.Row="0" HorizontalAlignment="Center" Margin="0,90,0,0" VerticalAlignment="Top" Value="0" Thickness="9" Minimum="0" Maximum="60" Outline="White" Height="208" Width="255" />
 
-        <TextBlock Grid.Row="0" Height="107" Width="107" FontSize="90" FontStyle="Italic" HorizontalAlignment="Center" Margin="50,25,46,5">
+
+        <Controls:RadialProgressBar x:Name="bar" Grid.Row="0" HorizontalAlignment="Center" Margin="0,110,0,0" VerticalAlignment="Top" Value="0" Thickness="9" Minimum="0" Maximum="60" Outline="White" Height="158" Width="175" />
+
+        <TextBlock Grid.Row="0" Height="107" Width="107" FontSize="90" FontStyle="Italic" HorizontalAlignment="Center" Margin="50,45,46,5">
             <Run x:Name="timeinsecs" Foreground="White"/>
         </TextBlock>
 
@@ -46,7 +49,7 @@
 
         </StackPanel>
 
-        <StackPanel x:Name="lapholder" Grid.Row="2" Background="White" BorderBrush="Orange" Margin="0,0,0,5" BorderThickness="4">
+        <StackPanel x:Name="lapholder" Grid.Row="2" Background="White" BorderBrush="Orange" Margin="0,0,0,0" BorderThickness="4">
             <ScrollViewer Height="190" Width="Auto" 
                   HorizontalScrollBarVisibility="Auto" 
                   VerticalScrollBarVisibility="Auto">

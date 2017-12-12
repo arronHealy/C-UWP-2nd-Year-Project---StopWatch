@@ -58,15 +58,25 @@ namespace StopwatchTimer
                 if (bar.Value >= 0 && bar.Value < 59.999)
                 {
                     bar.Foreground = new SolidColorBrush(Colors.Orange);
-                    bar.Value = Convert.ToDouble(bar.Value) + 0.033;
+                    bar.Value = Convert.ToDouble(bar.Value) + 0.034;
                 }
                 else
                 {
                     bar.Value = 0;
                 }
-                
-                
-                       
+
+                if (bar2.Value >= 0 && bar2.Value < 59.999)
+                {
+                    bar2.Foreground = new SolidColorBrush(Colors.Red);
+                    bar2.Value = Convert.ToDouble(bar2.Value) + 0.00034;
+                }
+                else
+                {
+                    bar2.Value = 0;
+                }
+
+
+
             }
         }
 
@@ -91,6 +101,7 @@ namespace StopwatchTimer
             currentTime = null;
             timertxtblock.Text = "00:00:00:00";
             bar.Value = 0;
+            bar2.Value = 0;
             timeinsecs.Text = "00";
             lapCount = 0;
             laps.Text = "";
