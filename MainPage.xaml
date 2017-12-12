@@ -16,46 +16,65 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center" Height="380" Width="420">
+            <TextBlock FontSize="50" Grid.Row="0" FontStyle="Italic" HorizontalAlignment="Center" Margin="100,-300,0,0" Height="75" Width="235">
+            <Run Text="Stopwatch" Foreground="White"/>
+            </TextBlock>
 
-        <TextBlock FontSize="50" Grid.Row="0" FontStyle="Italic" HorizontalAlignment="Center" Margin="20,0,0,240" Height="75" Width="235">
-             <Run Text="Stopwatch" Foreground="White"/>
-        </TextBlock>
+            <Controls:RadialProgressBar x:Name="bar" Grid.Row="0" HorizontalAlignment="Center" Margin="-255,115,0,0" VerticalAlignment="Top" Value="0" Thickness="9" Minimum="0" Maximum="60" Outline="White" Height="140" Width="175" />
 
-        <Controls:RadialProgressBar x:Name="bar2" Grid.Row="0" HorizontalAlignment="Center" Margin="0,90,0,0" VerticalAlignment="Top" Value="0" Thickness="9" Minimum="0" Maximum="60" Outline="White" Height="208" Width="255" />
+            <Controls:RadialProgressBar x:Name="bar2" Grid.Row="0" HorizontalAlignment="Center" Margin="-260,70,0,0" VerticalAlignment="Top" Value="0" Thickness="9" Minimum="0" Maximum="60" Outline="White" Height="230" Width="265" />
 
+            <TextBlock FontSize="30" Grid.Row="0" FontStyle="Italic" HorizontalAlignment="Center" Margin="-250,75,0,0" Width="48">
+            <Run Text="60" Foreground="White"/>
+            </TextBlock>
 
-        <Controls:RadialProgressBar x:Name="bar" Grid.Row="0" HorizontalAlignment="Center" Margin="0,110,0,0" VerticalAlignment="Top" Value="0" Thickness="9" Minimum="0" Maximum="60" Outline="White" Height="158" Width="175" />
+            <TextBlock FontSize="30" Grid.Row="0" FontStyle="Italic" HorizontalAlignment="Right" Margin="-47,25,0,0" Height="75" Width="95">
+            <Run Text="15" Foreground="White"/>
+            </TextBlock>
 
-        <TextBlock Grid.Row="0" Height="107" Width="107" FontSize="90" FontStyle="Italic" HorizontalAlignment="Center" Margin="50,45,46,5">
+            <TextBlock FontSize="30" Grid.Row="0" FontStyle="Italic" HorizontalAlignment="Center" Margin="-303,195,0,0" Height="75" Width="93">
+            <Run Text="30" Foreground="White"/>
+            </TextBlock>
+
+            <TextBlock FontSize="30" Grid.Row="0" FontStyle="Italic" HorizontalAlignment="Left" Margin="-303,25,0,0" Height="75" Width="93">
+            <Run Text="45" Foreground="White"/>
+            </TextBlock>
+
+     
+            <TextBlock Grid.Row="0" Height="107" Width="107" FontSize="90" FontStyle="Italic" HorizontalAlignment="Center" Margin="-310,-40,46,0">
             <Run x:Name="timeinsecs" Foreground="White"/>
-        </TextBlock>
+            </TextBlock>
 
-        <TextBlock Foreground="White" FontStyle="Italic" Grid.Row="1" FontSize="60" HorizontalAlignment="Center" Margin="10, -40, 0, 50" Width="300" Height="80">
+            
+        </StackPanel>
+
+        <TextBlock Foreground="White" FontStyle="Italic" Grid.Row="1" FontSize="60" HorizontalAlignment="Center" Margin="10, -90, 0, 0" Width="300" Height="80">
             <Run x:Name="timertxtblock" Foreground="White" />
         </TextBlock>
 
 
-
-
-
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="1" Width="360" Height="80" Margin="0, 50, 0, 0">
-            <AppBarButton Grid.Row="1" x:Name="Start_Button"  Margin="15, 20, 20, 0" Height="60" Foreground="white" Background="Transparent" FontSize="20" Icon="Play" Label="Start" BorderBrush="Orange" BorderThickness="3" Click="Start_Button_Click"/>
 
-            <AppBarButton Grid.Row="1" x:Name="Stop_Button" Margin="0, 20, 20, 0" Height="60" Foreground="White" Background="Transparent" FontSize="20" Icon="Stop" Label="Stop" BorderBrush="Orange" BorderThickness="3" Click="Stop_Button_Click"/>
+         
+            
+            <AppBarButton Grid.Row="1" x:Name="Start_Button"  Margin="15, 20, 20, 0" Height="60" Foreground="white" Background="Transparent" FontSize="20" Icon="Play" Label="Start" BorderBrush="SkyBlue" BorderThickness="3" Click="Start_Button_Click"/>
 
-            <AppBarButton Grid.Row="1" x:Name="Reset_Button" Margin="0, 20, 20, 0" Height="60" Foreground="White" Background="Transparent" FontSize="20" Icon="Redo" Label="Reset" BorderBrush="Orange" BorderThickness="3" Click="Reset_Button_Click"/>
+            <AppBarButton Grid.Row="1" x:Name="Stop_Button" Margin="0, 20, 20, 0" Height="60" Foreground="White" Background="Transparent" FontSize="20" Icon="Stop" Label="Stop" BorderBrush="SkyBlue" BorderThickness="3" Click="Stop_Button_Click"/>
 
-            <AppBarButton Grid.Row="1" x:Name="Lap_Button" Margin="0, 20, 20, 0" Height="60" Foreground="White" Background="Transparent" FontSize="20" Icon="Flag" Label="Lap" BorderBrush="Orange" BorderThickness="3"  Click="Lap_Button_Click"/>
+            <AppBarButton Grid.Row="1" x:Name="Reset_Button" Margin="0, 20, 20, 0" Height="60" Foreground="White" Background="Transparent" FontSize="20" Icon="Redo" Label="Reset" BorderBrush="SkyBlue" BorderThickness="3" Click="Reset_Button_Click"/>
+
+            <AppBarButton Grid.Row="1" x:Name="Lap_Button" Margin="0, 20, 20, 0" Height="60" Foreground="White" Background="Transparent" FontSize="20" Icon="Flag" Label="Lap" BorderBrush="SkyBlue" BorderThickness="3"  Click="Lap_Button_Click"/>
 
         </StackPanel>
 
-        <StackPanel x:Name="lapholder" Grid.Row="2" Background="White" BorderBrush="Orange" Margin="0,0,0,0" BorderThickness="4">
+        <StackPanel x:Name="lapholder" Grid.Row="2" Background="White" BorderBrush="SkyBlue" Margin="0,0,0,0" BorderThickness="4">
             <ScrollViewer Height="190" Width="Auto" 
                   HorizontalScrollBarVisibility="Auto" 
                   VerticalScrollBarVisibility="Auto">
                 <TextBlock x:Name="laps">
 
-            </TextBlock>
+                </TextBlock>
             </ScrollViewer>
         </StackPanel>
 
