@@ -100,7 +100,6 @@ namespace StopwatchTimer
         private void Reset_Button_Click(object sender, RoutedEventArgs e)
         {
             watch.Reset();
-            currentTime = null;
             timertxtblock.Text = "00:00:00:00";
             bar.Value = 0;
             bar2.Value = 0;
