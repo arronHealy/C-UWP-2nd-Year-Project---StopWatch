@@ -5,7 +5,7 @@
   <Properties>
     <DisplayName>StopwatchTimer</DisplayName>
     <PublisherDisplayName>Aaron</PublisherDisplayName>
-    <Logo>Assets\StoreLogo.png</Logo>
+    <Logo>Assets\icon6.png</Logo>
   </Properties>
   <Dependencies>
     <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
@@ -15,10 +15,14 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="StopwatchTimer.App">
-      <uap:VisualElements DisplayName="StopwatchTimer" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="StopwatchTimer" BackgroundColor="transparent">
-        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png">
+      <uap:VisualElements DisplayName="StopwatchTimer" Square150x150Logo="Assets\icon7.png" Square44x44Logo="Assets\icon4.png" Description="StopwatchTimer" BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\icon3.png">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo" />
+            <uap:ShowOn Tile="wide310x150Logo" />
+          </uap:ShowNameOnTiles>
         </uap:DefaultTile>
-        <uap:SplashScreen Image="Assets\watch.png" BackgroundColor="darkOrange" />
+        <uap:SplashScreen Image="Assets\icon5.png" BackgroundColor="skyBlue" />
       </uap:VisualElements>
     </Application>
   </Applications>
