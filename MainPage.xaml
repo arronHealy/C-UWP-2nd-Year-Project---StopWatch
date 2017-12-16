@@ -26,23 +26,23 @@
             <Run Text="Stopwatch" Foreground="White"/>
             </TextBlock>
 
-            <Controls:RadialProgressBar x:Name="bar" Grid.Row="0" HorizontalAlignment="Center" Margin="-390,145,0,0" VerticalAlignment="Top" Value="0" Thickness="9" Minimum="0" Maximum="60" Outline="White" Height="190" Width="205" />
+            <Controls:RadialProgressBar x:Name="bar" Grid.Row="0" HorizontalAlignment="Center" Margin="-390,145,0,0" VerticalAlignment="Top" Value="0" Thickness="9" Minimum="0" Maximum="60" Outline="White"  Height="190" Width="205" />
 
             <Controls:RadialProgressBar x:Name="bar2" Grid.Row="0" HorizontalAlignment="Center" Margin="-390,100,0,0" VerticalAlignment="Top" Value="0" Thickness="9" Minimum="0" Maximum="60" Outline="White" Height="280" Width="295" />
 
-            <TextBlock FontSize="30" Grid.Row="0" FontStyle="Italic" HorizontalAlignment="Center" Margin="-378,105,0,0" Width="48">
+            <TextBlock FontSize="30" Grid.Row="0" FontStyle="Italic" HorizontalAlignment="Center" Margin="-380,105,0,0" Width="48">
             <Run Text="60" Foreground="White"/>
             </TextBlock>
 
-            <TextBlock FontSize="30" Grid.Row="0" FontStyle="Italic" HorizontalAlignment="Right" Margin="-100,135,0,0" Height="75" Width="95">
+            <TextBlock FontSize="30" Grid.Row="0" FontStyle="Italic" HorizontalAlignment="Right" Margin="-100,143,0,0" Height="75" Width="95">
             <Run Text="15" Foreground="White"/>
             </TextBlock>
 
-            <TextBlock FontSize="30" Grid.Row="0" FontStyle="Italic" HorizontalAlignment="Center" Margin="-340,330,0,0" Height="75" Width="93">
+            <TextBlock FontSize="30" Grid.Row="0" FontStyle="Italic" HorizontalAlignment="Center" Margin="-330,330,0,0" Height="75" Width="93">
             <Run Text="30" Foreground="White"/>
             </TextBlock>
 
-            <TextBlock FontSize="30" Grid.Row="0" FontStyle="Italic" HorizontalAlignment="Left" Margin="-333,123,0,0" Height="75" Width="93">
+            <TextBlock FontSize="30" Grid.Row="0" FontStyle="Italic" HorizontalAlignment="Left" Margin="-333,135,0,0" Height="75" Width="93">
             <Run Text="45" Foreground="White"/>
             </TextBlock>
 
@@ -54,12 +54,17 @@
 
         </StackPanel>
 
-        <TextBlock Foreground="White" FontStyle="Italic" Grid.Row="1" FontSize="60" HorizontalAlignment="Center" Margin="30, -100, 0, 0" Width="300" Height="80">
+        <TextBlock Foreground="White" FontStyle="Italic" Grid.Row="1" FontSize="30" HorizontalAlignment="Center" Margin="70, -140, 0, 0" Width="300" Height="50">
+            <Run x:Name="datetxtblock" Foreground="White" />
+        </TextBlock>
+
+
+        <TextBlock Foreground="White" FontStyle="Italic" Grid.Row="1" FontSize="60" HorizontalAlignment="Center" Margin="30, -60, 0, 0" Width="300" Height="70">
             <Run x:Name="timertxtblock" Foreground="White" />
         </TextBlock>
 
 
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="1" Width="360" Height="80" Margin="30, 50, 0, 0">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="1" Width="360" Height="80" Margin="30, 80, 0, 0">
 
 
 

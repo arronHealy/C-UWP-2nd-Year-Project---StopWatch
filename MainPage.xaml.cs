@@ -33,6 +33,8 @@ namespace StopwatchTimer
 
         string currentSecs = string.Empty;
 
+        DateTime date = DateTime.Now;
+
         int lapCount = 0;
 
         public MainPage()
@@ -54,11 +56,13 @@ namespace StopwatchTimer
 
                 timeinsecs.Text = currentSecs;
 
+                datetxtblock.Text = date.ToString();
+
             
                 if (bar.Value >= 0 && bar.Value < 59.999)
                 {
                     bar.Foreground = new SolidColorBrush(Colors.LightSkyBlue);
-                    bar.Value = Convert.ToDouble(bar.Value) + 0.03317;
+                    bar.Value = Convert.ToDouble(bar.Value) + 0.033171;
                 }
                 else
                 {
@@ -68,7 +72,7 @@ namespace StopwatchTimer
                 if (bar2.Value >= 0 && bar2.Value < 59.999)
                 {
                     bar2.Foreground = new SolidColorBrush(Colors.LightGreen);
-                    bar2.Value = Convert.ToDouble(bar2.Value) + 0.000535;
+                    bar2.Value = Convert.ToDouble(bar2.Value) + 0.00055284;
                 }
                 else
                 {
