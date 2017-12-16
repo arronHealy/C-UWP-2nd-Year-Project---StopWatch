@@ -33,7 +33,11 @@ namespace StopwatchTimer
 
         string currentSecs = string.Empty;
 
+        string dateSecond = string.Empty;
+
         DateTime date = DateTime.Now;
+
+        DateTime now;
 
         int lapCount = 0;
 
@@ -55,7 +59,11 @@ namespace StopwatchTimer
                 currentSecs = String.Format("{0:00}", time.Seconds);
 
                 timeinsecs.Text = currentSecs;
-            
+
+                now = date.Add(time);
+
+                datetxtblock.Text = now.ToString();
+
                 if (bar.Value >= 0 && bar.Value < 59.999)
                 {
                     bar.Foreground = new SolidColorBrush(Colors.LightSkyBlue);
@@ -85,7 +93,6 @@ namespace StopwatchTimer
         {
             watch.Start();
             timer.Start();
-            datetxtblock.Text = date.ToString();
         }
 
         private void Stop_Button_Click(object sender, RoutedEventArgs e)
@@ -118,7 +125,7 @@ namespace StopwatchTimer
                 laps.FontWeight = FontWeights.Bold;
                 laps.FontStyle = FontStyle.Italic;
 
-                laps.Text += " Lap " + lapCount + " - Time: " + currentTime + Environment.NewLine + Environment.NewLine;
+                laps.Text += " Lap " + lapCount + " - Time - " + currentTime + Environment.NewLine + Environment.NewLine;
 
 
             }
