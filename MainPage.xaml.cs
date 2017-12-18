@@ -77,7 +77,7 @@ namespace StopwatchTimer
                 if (bar2.Value >= 0 && bar2.Value < 59.999)
                 {
                     bar2.Foreground = new SolidColorBrush(Colors.LightGreen);
-                    bar2.Value = Convert.ToDouble(bar2.Value) + 0.00055284;
+                    bar2.Value = Convert.ToDouble(bar2.Value) + 0.00055285;
                 }
                 else
                 {
