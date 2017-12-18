@@ -48,6 +48,8 @@ namespace StopwatchTimer
             timer.Interval = new TimeSpan(0, 0, 0, 0, 1);
         }
 
+        //print times and handle progress bar
+
         private void dt_Tick(object sender, object e)
         {
             if(watch.IsRunning)
@@ -89,11 +91,15 @@ namespace StopwatchTimer
             }
         }
 
+        //start watch
+
         private void Start_Button_Click(object sender, RoutedEventArgs e)
         {
             watch.Start();
             timer.Start();
         }
+
+        //stop watch
 
         private void Stop_Button_Click(object sender, RoutedEventArgs e)
         {
@@ -103,6 +109,8 @@ namespace StopwatchTimer
             }
             
         }
+
+        //reset watch
 
         private void Reset_Button_Click(object sender, RoutedEventArgs e)
         {
@@ -114,6 +122,8 @@ namespace StopwatchTimer
             lapCount = 0;
             laps.Text = "";
         }
+
+        //print lap times
 
         private void Lap_Button_Click(object sender, RoutedEventArgs e)
         {
