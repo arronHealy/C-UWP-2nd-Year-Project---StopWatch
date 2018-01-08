@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StopwatchTimer", "StopwatchTimer\StopwatchTimer.csproj", "{15E3DA91-0933-4E0D-BA93-154CA2B014DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15E3DA91-0933-4E0D-BA93-154CA2B014DF}.Debug|ARM.ActiveCfg = Debug|ARM
+		{15E3DA91-0933-4E0D-BA93-154CA2B014DF}.Debug|ARM.Build.0 = Debug|ARM
+		{15E3DA91-0933-4E0D-BA93-154CA2B014DF}.Debug|ARM.Deploy.0 = Debug|ARM
+		{15E3DA91-0933-4E0D-BA93-154CA2B014DF}.Debug|x64.ActiveCfg = Debug|x64
+		{15E3DA91-0933-4E0D-BA93-154CA2B014DF}.Debug|x64.Build.0 = Debug|x64
+		{15E3DA91-0933-4E0D-BA93-154CA2B014DF}.Debug|x64.Deploy.0 = Debug|x64
+		{15E3DA91-0933-4E0D-BA93-154CA2B014DF}.Debug|x86.ActiveCfg = Debug|x86
+		{15E3DA91-0933-4E0D-BA93-154CA2B014DF}.Debug|x86.Build.0 = Debug|x86
+		{15E3DA91-0933-4E0D-BA93-154CA2B014DF}.Debug|x86.Deploy.0 = Debug|x86
+		{15E3DA91-0933-4E0D-BA93-154CA2B014DF}.Release|ARM.ActiveCfg = Release|ARM
+		{15E3DA91-0933-4E0D-BA93-154CA2B014DF}.Release|ARM.Build.0 = Release|ARM
+		{15E3DA91-0933-4E0D-BA93-154CA2B014DF}.Release|ARM.Deploy.0 = Release|ARM
+		{15E3DA91-0933-4E0D-BA93-154CA2B014DF}.Release|x64.ActiveCfg = Release|x64
+		{15E3DA91-0933-4E0D-BA93-154CA2B014DF}.Release|x64.Build.0 = Release|x64
+		{15E3DA91-0933-4E0D-BA93-154CA2B014DF}.Release|x64.Deploy.0 = Release|x64
+		{15E3DA91-0933-4E0D-BA93-154CA2B014DF}.Release|x86.ActiveCfg = Release|x86
+		{15E3DA91-0933-4E0D-BA93-154CA2B014DF}.Release|x86.Build.0 = Release|x86
+		{15E3DA91-0933-4E0D-BA93-154CA2B014DF}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6EB69A32-304F-4FDA-B019-20AFD1EE710A}
+	EndGlobalSection
+EndGlobal
